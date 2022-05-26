@@ -35,14 +35,14 @@ Partial Class Form1
         Me.titleLabel = New System.Windows.Forms.Label()
         Me.buttonPanel = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.player1Label = New System.Windows.Forms.Label()
-        Me.player2Label = New System.Windows.Forms.Label()
+        Me.player2ScoreLabel = New System.Windows.Forms.Label()
         Me.player1ScoreLabel = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.player2Label = New System.Windows.Forms.Label()
+        Me.player1Label = New System.Windows.Forms.Label()
         Me.menuPanel = New System.Windows.Forms.Panel()
-        Me.newGameButton = New System.Windows.Forms.Button()
-        Me.resetButton = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.Button()
+        Me.resetButton = New System.Windows.Forms.Button()
+        Me.newGameButton = New System.Windows.Forms.Button()
         Me.titlePanel.SuspendLayout()
         Me.buttonPanel.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -57,7 +57,6 @@ Partial Class Form1
         Me.buttonClick1.Name = "buttonClick1"
         Me.buttonClick1.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick1.TabIndex = 0
-        Me.buttonClick1.Text = "X"
         Me.buttonClick1.UseVisualStyleBackColor = False
         '
         'buttonClick2
@@ -68,7 +67,6 @@ Partial Class Form1
         Me.buttonClick2.Name = "buttonClick2"
         Me.buttonClick2.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick2.TabIndex = 1
-        Me.buttonClick2.Text = "O"
         Me.buttonClick2.UseVisualStyleBackColor = False
         '
         'buttonClick3
@@ -79,7 +77,6 @@ Partial Class Form1
         Me.buttonClick3.Name = "buttonClick3"
         Me.buttonClick3.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick3.TabIndex = 2
-        Me.buttonClick3.Text = "X"
         Me.buttonClick3.UseVisualStyleBackColor = False
         '
         'buttonClick4
@@ -90,7 +87,6 @@ Partial Class Form1
         Me.buttonClick4.Name = "buttonClick4"
         Me.buttonClick4.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick4.TabIndex = 0
-        Me.buttonClick4.Text = "X"
         Me.buttonClick4.UseVisualStyleBackColor = False
         '
         'buttonClick5
@@ -101,7 +97,6 @@ Partial Class Form1
         Me.buttonClick5.Name = "buttonClick5"
         Me.buttonClick5.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick5.TabIndex = 1
-        Me.buttonClick5.Text = "O"
         Me.buttonClick5.UseVisualStyleBackColor = False
         '
         'buttonClick6
@@ -112,7 +107,6 @@ Partial Class Form1
         Me.buttonClick6.Name = "buttonClick6"
         Me.buttonClick6.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick6.TabIndex = 2
-        Me.buttonClick6.Text = "X"
         Me.buttonClick6.UseVisualStyleBackColor = False
         '
         'buttonClick7
@@ -123,7 +117,6 @@ Partial Class Form1
         Me.buttonClick7.Name = "buttonClick7"
         Me.buttonClick7.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick7.TabIndex = 0
-        Me.buttonClick7.Text = "X"
         Me.buttonClick7.UseVisualStyleBackColor = False
         '
         'buttonClick8
@@ -134,7 +127,6 @@ Partial Class Form1
         Me.buttonClick8.Name = "buttonClick8"
         Me.buttonClick8.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick8.TabIndex = 1
-        Me.buttonClick8.Text = "O"
         Me.buttonClick8.UseVisualStyleBackColor = False
         '
         'buttonClick9
@@ -145,7 +137,6 @@ Partial Class Form1
         Me.buttonClick9.Name = "buttonClick9"
         Me.buttonClick9.Size = New System.Drawing.Size(69, 56)
         Me.buttonClick9.TabIndex = 2
-        Me.buttonClick9.Text = "X"
         Me.buttonClick9.UseVisualStyleBackColor = False
         '
         'titlePanel
@@ -189,7 +180,7 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.player2ScoreLabel)
         Me.GroupBox1.Controls.Add(Me.player1ScoreLabel)
         Me.GroupBox1.Controls.Add(Me.player2Label)
         Me.GroupBox1.Controls.Add(Me.player1Label)
@@ -201,25 +192,17 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Score Board:"
         '
-        'player1Label
+        'player2ScoreLabel
         '
-        Me.player1Label.AutoSize = True
-        Me.player1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.player1Label.Location = New System.Drawing.Point(7, 21)
-        Me.player1Label.Name = "player1Label"
-        Me.player1Label.Size = New System.Drawing.Size(74, 18)
-        Me.player1Label.TabIndex = 0
-        Me.player1Label.Text = "Player 1:"
-        '
-        'player2Label
-        '
-        Me.player2Label.AutoSize = True
-        Me.player2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.player2Label.Location = New System.Drawing.Point(7, 55)
-        Me.player2Label.Name = "player2Label"
-        Me.player2Label.Size = New System.Drawing.Size(74, 18)
-        Me.player2Label.TabIndex = 1
-        Me.player2Label.Text = "Player 2:"
+        Me.player2ScoreLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.player2ScoreLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.player2ScoreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.player2ScoreLabel.Location = New System.Drawing.Point(81, 51)
+        Me.player2ScoreLabel.Name = "player2ScoreLabel"
+        Me.player2ScoreLabel.Size = New System.Drawing.Size(25, 26)
+        Me.player2ScoreLabel.TabIndex = 2
+        Me.player2ScoreLabel.Text = "0"
+        Me.player2ScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'player1ScoreLabel
         '
@@ -233,17 +216,25 @@ Partial Class Form1
         Me.player1ScoreLabel.Text = "0"
         Me.player1ScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label1
+        'player2Label
         '
-        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(81, 51)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(25, 26)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "0"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.player2Label.AutoSize = True
+        Me.player2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.player2Label.Location = New System.Drawing.Point(7, 55)
+        Me.player2Label.Name = "player2Label"
+        Me.player2Label.Size = New System.Drawing.Size(74, 18)
+        Me.player2Label.TabIndex = 1
+        Me.player2Label.Text = "Player 2:"
+        '
+        'player1Label
+        '
+        Me.player1Label.AutoSize = True
+        Me.player1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.player1Label.Location = New System.Drawing.Point(7, 21)
+        Me.player1Label.Name = "player1Label"
+        Me.player1Label.Size = New System.Drawing.Size(74, 18)
+        Me.player1Label.TabIndex = 0
+        Me.player1Label.Text = "Player 1:"
         '
         'menuPanel
         '
@@ -257,35 +248,38 @@ Partial Class Form1
         Me.menuPanel.Size = New System.Drawing.Size(120, 132)
         Me.menuPanel.TabIndex = 6
         '
-        'newGameButton
-        '
-        Me.newGameButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.newGameButton.Location = New System.Drawing.Point(8, 5)
-        Me.newGameButton.Name = "newGameButton"
-        Me.newGameButton.Size = New System.Drawing.Size(102, 36)
-        Me.newGameButton.TabIndex = 0
-        Me.newGameButton.Text = "New Game"
-        Me.newGameButton.UseVisualStyleBackColor = True
-        '
-        'resetButton
-        '
-        Me.resetButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.resetButton.Location = New System.Drawing.Point(8, 47)
-        Me.resetButton.Name = "resetButton"
-        Me.resetButton.Size = New System.Drawing.Size(102, 36)
-        Me.resetButton.TabIndex = 0
-        Me.resetButton.Text = "Reset"
-        Me.resetButton.UseVisualStyleBackColor = True
-        '
         'exitButton
         '
+        Me.exitButton.BackColor = System.Drawing.Color.Firebrick
         Me.exitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.exitButton.Location = New System.Drawing.Point(7, 89)
         Me.exitButton.Name = "exitButton"
         Me.exitButton.Size = New System.Drawing.Size(102, 36)
         Me.exitButton.TabIndex = 0
         Me.exitButton.Text = "Exit"
-        Me.exitButton.UseVisualStyleBackColor = True
+        Me.exitButton.UseVisualStyleBackColor = False
+        '
+        'resetButton
+        '
+        Me.resetButton.BackColor = System.Drawing.Color.Snow
+        Me.resetButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.resetButton.Location = New System.Drawing.Point(8, 47)
+        Me.resetButton.Name = "resetButton"
+        Me.resetButton.Size = New System.Drawing.Size(102, 36)
+        Me.resetButton.TabIndex = 0
+        Me.resetButton.Text = "Reset"
+        Me.resetButton.UseVisualStyleBackColor = False
+        '
+        'newGameButton
+        '
+        Me.newGameButton.BackColor = System.Drawing.Color.Snow
+        Me.newGameButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.newGameButton.Location = New System.Drawing.Point(8, 5)
+        Me.newGameButton.Name = "newGameButton"
+        Me.newGameButton.Size = New System.Drawing.Size(102, 36)
+        Me.newGameButton.TabIndex = 0
+        Me.newGameButton.Text = "New Game"
+        Me.newGameButton.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -325,7 +319,7 @@ Partial Class Form1
     Friend WithEvents titleLabel As Label
     Friend WithEvents buttonPanel As Panel
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents player2ScoreLabel As Label
     Friend WithEvents player1ScoreLabel As Label
     Friend WithEvents player2Label As Label
     Friend WithEvents player1Label As Label
