@@ -53,6 +53,7 @@ Partial Class Form1
         '
         Me.buttonClick1.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick1.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick1.ForeColor = System.Drawing.Color.Black
         Me.buttonClick1.Location = New System.Drawing.Point(3, 3)
         Me.buttonClick1.Name = "buttonClick1"
         Me.buttonClick1.Size = New System.Drawing.Size(69, 56)
@@ -63,6 +64,7 @@ Partial Class Form1
         '
         Me.buttonClick2.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick2.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick2.ForeColor = System.Drawing.Color.Black
         Me.buttonClick2.Location = New System.Drawing.Point(78, 3)
         Me.buttonClick2.Name = "buttonClick2"
         Me.buttonClick2.Size = New System.Drawing.Size(69, 56)
@@ -73,6 +75,7 @@ Partial Class Form1
         '
         Me.buttonClick3.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick3.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick3.ForeColor = System.Drawing.Color.Black
         Me.buttonClick3.Location = New System.Drawing.Point(153, 3)
         Me.buttonClick3.Name = "buttonClick3"
         Me.buttonClick3.Size = New System.Drawing.Size(69, 56)
@@ -83,6 +86,7 @@ Partial Class Form1
         '
         Me.buttonClick4.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick4.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick4.ForeColor = System.Drawing.Color.Black
         Me.buttonClick4.Location = New System.Drawing.Point(3, 65)
         Me.buttonClick4.Name = "buttonClick4"
         Me.buttonClick4.Size = New System.Drawing.Size(69, 56)
@@ -93,6 +97,7 @@ Partial Class Form1
         '
         Me.buttonClick5.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick5.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick5.ForeColor = System.Drawing.Color.Black
         Me.buttonClick5.Location = New System.Drawing.Point(78, 65)
         Me.buttonClick5.Name = "buttonClick5"
         Me.buttonClick5.Size = New System.Drawing.Size(69, 56)
@@ -103,6 +108,7 @@ Partial Class Form1
         '
         Me.buttonClick6.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick6.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick6.ForeColor = System.Drawing.Color.Black
         Me.buttonClick6.Location = New System.Drawing.Point(153, 65)
         Me.buttonClick6.Name = "buttonClick6"
         Me.buttonClick6.Size = New System.Drawing.Size(69, 56)
@@ -113,6 +119,7 @@ Partial Class Form1
         '
         Me.buttonClick7.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick7.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick7.ForeColor = System.Drawing.Color.Black
         Me.buttonClick7.Location = New System.Drawing.Point(3, 127)
         Me.buttonClick7.Name = "buttonClick7"
         Me.buttonClick7.Size = New System.Drawing.Size(69, 56)
@@ -123,6 +130,7 @@ Partial Class Form1
         '
         Me.buttonClick8.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick8.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick8.ForeColor = System.Drawing.Color.Black
         Me.buttonClick8.Location = New System.Drawing.Point(78, 127)
         Me.buttonClick8.Name = "buttonClick8"
         Me.buttonClick8.Size = New System.Drawing.Size(69, 56)
@@ -133,6 +141,7 @@ Partial Class Form1
         '
         Me.buttonClick9.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.buttonClick9.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonClick9.ForeColor = System.Drawing.Color.Black
         Me.buttonClick9.Location = New System.Drawing.Point(153, 127)
         Me.buttonClick9.Name = "buttonClick9"
         Me.buttonClick9.Size = New System.Drawing.Size(69, 56)
