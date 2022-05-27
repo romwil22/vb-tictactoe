@@ -18,6 +18,30 @@
         Return 0
     End Function
 
+    ' player winning best of 3
+    Public Function bestOf3() As Integer
+        If player1ScoreLabel.Text = "3" Then
+            player1Label.ForeColor = Color.Black
+            player2Label.ForeColor = Color.Black
+
+            resetButton.Enabled = False
+            disableBoxes()
+
+            MessageBox.Show("Player 1 overall winner!!!")
+        End If
+
+        If player2ScoreLabel.Text = "3" Then
+            player1Label.ForeColor = Color.Black
+            player2Label.ForeColor = Color.Black
+
+            resetButton.Enabled = False
+            disableBoxes()
+
+            MessageBox.Show("Player 2 overall winner!!!")
+        End If
+        Return 0
+    End Function
+
     ' player score board
     Public Function playersScoreBoard() As Integer
 
@@ -228,12 +252,14 @@
         If playerTurn = False Then
             buttonClick5.Text = "X"
             playerTurn = True
+
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
         Else
             buttonClick5.Text = "O"
             playerTurn = False
+
             player1Label.ForeColor = Color.Green
             player2Label.ForeColor = Color.Black
 
@@ -241,6 +267,7 @@
 
         buttonClick5.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
@@ -264,6 +291,8 @@
         buttonClick7.Enabled = True
         buttonClick8.Enabled = True
         buttonClick9.Enabled = True
+
+        resetButton.Enabled = True
 
         player1ScoreLabel.Text = "0"
         player2ScoreLabel.Text = "0"
@@ -328,6 +357,7 @@
 
         buttonClick1.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
@@ -349,6 +379,7 @@
 
         buttonClick2.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
@@ -370,6 +401,7 @@
 
         buttonClick3.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
@@ -391,6 +423,7 @@
 
         buttonClick4.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
@@ -411,6 +444,7 @@
 
         buttonClick6.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
@@ -431,6 +465,7 @@
 
         buttonClick7.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
@@ -451,6 +486,7 @@
 
         buttonClick8.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
@@ -471,6 +507,7 @@
 
         buttonClick9.Enabled = False
         playersScoreBoard()
+        bestOf3()
 
     End Sub
 
