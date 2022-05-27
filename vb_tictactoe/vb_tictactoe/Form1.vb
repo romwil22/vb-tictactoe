@@ -23,9 +23,9 @@
 
         ' player X winning conbination
         If (buttonClick1.Text = "X") And (buttonClick2.Text = "X") And (buttonClick3.Text = "X") Then
-            buttonClick1.ForeColor = Color.Green
-            buttonClick2.ForeColor = Color.Green
-            buttonClick3.ForeColor = Color.Green
+            buttonClick1.ForeColor = System.Drawing.Color.Green
+            buttonClick2.ForeColor = System.Drawing.Color.Green
+            buttonClick3.ForeColor = System.Drawing.Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -40,8 +40,6 @@
             buttonClick4.ForeColor = Color.Green
             buttonClick5.ForeColor = Color.Green
             buttonClick6.ForeColor = Color.Green
-
-
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -329,7 +327,9 @@
 
         player1Label.ForeColor = Color.Green
         player2Label.ForeColor = Color.Black
+
         playerTurn = False
+
 
     End Sub
 
@@ -367,6 +367,10 @@
         player1Label.ForeColor = Color.Green
         player2Label.ForeColor = Color.Black
 
+        playerTurn = False
+
+
+
     End Sub
 
     Private Sub exitButton_Click(sender As Object, e As EventArgs) Handles exitButton.Click
@@ -388,8 +392,9 @@
 
         End If
 
-        playersScoreBoard()
+
         buttonClick1.Enabled = False
+        playersScoreBoard()
 
     End Sub
 
@@ -408,8 +413,9 @@
 
         End If
 
-        playersScoreBoard()
+
         buttonClick2.Enabled = False
+        playersScoreBoard()
 
     End Sub
 
@@ -428,8 +434,9 @@
 
         End If
 
-        playersScoreBoard()
+
         buttonClick3.Enabled = False
+        playersScoreBoard()
 
     End Sub
 
@@ -448,8 +455,9 @@
 
         End If
 
-        playersScoreBoard()
+
         buttonClick4.Enabled = False
+        playersScoreBoard()
 
     End Sub
 
@@ -468,8 +476,9 @@
 
         End If
 
-        playersScoreBoard()
+
         buttonClick6.Enabled = False
+        playersScoreBoard()
 
     End Sub
 
@@ -488,8 +497,9 @@
 
         End If
 
-        playersScoreBoard()
+
         buttonClick7.Enabled = False
+        playersScoreBoard()
 
     End Sub
 
@@ -509,8 +519,10 @@
 
         End If
 
-        playersScoreBoard()
+
         buttonClick8.Enabled = False
+        playersScoreBoard()
+
     End Sub
 
     Private Sub buttonClick9_Click(sender As Object, e As EventArgs) Handles buttonClick9.Click
@@ -528,8 +540,9 @@
 
         End If
 
-        playersScoreBoard()
         buttonClick9.Enabled = False
+        playersScoreBoard()
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
