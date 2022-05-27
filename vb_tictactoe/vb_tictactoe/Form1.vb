@@ -25,6 +25,7 @@
             player2Label.ForeColor = Color.Black
 
             resetButton.Enabled = False
+            resetButton.ForeColor = Color.Black
             disableBoxes()
 
             MessageBox.Show("Player 1 overall winner!!!")
@@ -35,6 +36,7 @@
             player2Label.ForeColor = Color.Black
 
             resetButton.Enabled = False
+            resetButton.ForeColor = Color.Black
             disableBoxes()
 
             MessageBox.Show("Player 2 overall winner!!!")
@@ -336,6 +338,7 @@
     End Sub
 
     Private Sub exitButton_Click(sender As Object, e As EventArgs) Handles exitButton.Click
+        MessageBox.Show("Thank you for playing tic tac toe.", "Message")
         Close()
     End Sub
 
