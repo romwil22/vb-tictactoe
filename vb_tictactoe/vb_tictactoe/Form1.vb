@@ -258,10 +258,9 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
+        ElseIf playerTurn = True Then
             buttonClick5.Text = "O"
             playerTurn = False
-
             player1Label.ForeColor = Color.Green
             player2Label.ForeColor = Color.Black
 
@@ -299,7 +298,7 @@
         player1ScoreLabel.Text = "0"
         player2ScoreLabel.Text = "0"
 
-        player1Label.ForeColor = Color.Black
+        player1Label.ForeColor = Color.Green
         player2Label.ForeColor = Color.Black
 
         playerTurn = False
@@ -328,7 +327,7 @@
         buttonClick8.Enabled = True
         buttonClick9.Enabled = True
 
-        player1Label.ForeColor = Color.Black
+        player1Label.ForeColor = Color.Green
         player2Label.ForeColor = Color.Black
 
         playerTurn = False
@@ -349,14 +348,13 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
-            buttonClick5.Text = "O"
+        ElseIf playerTurn = True Then
+            buttonClick1.Text = "O"
             playerTurn = False
             player1Label.ForeColor = Color.Green
             player2Label.ForeColor = Color.Black
 
         End If
-
 
         buttonClick1.Enabled = False
         playersScoreBoard()
@@ -371,13 +369,15 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
-            buttonClick5.Text = "O"
+        ElseIf playerTurn = True Then
+            buttonClick2.Text = "O"
             playerTurn = False
             player1Label.ForeColor = Color.Green
             player2Label.ForeColor = Color.Black
 
         End If
+
+
 
 
         buttonClick2.Enabled = False
@@ -393,14 +393,13 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
+        ElseIf playerTurn = True Then
             buttonClick3.Text = "O"
             playerTurn = False
             player1Label.ForeColor = Color.Green
             player2Label.ForeColor = Color.Black
 
         End If
-
 
         buttonClick3.Enabled = False
         playersScoreBoard()
@@ -415,14 +414,13 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
+        ElseIf playerTurn = True Then
             buttonClick4.Text = "O"
             playerTurn = False
             player1Label.ForeColor = Color.Green
             player2Label.ForeColor = Color.Black
 
         End If
-
 
         buttonClick4.Enabled = False
         playersScoreBoard()
@@ -437,7 +435,7 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
+        ElseIf playerTurn = True Then
             buttonClick6.Text = "O"
             playerTurn = False
             player1Label.ForeColor = Color.Green
@@ -458,7 +456,7 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
+        ElseIf playerTurn = True Then
             buttonClick7.Text = "O"
             playerTurn = False
             player1Label.ForeColor = Color.Green
@@ -479,7 +477,9 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
+        End If
+
+        If playerTurn = True Then
             buttonClick8.Text = "O"
             playerTurn = False
             player1Label.ForeColor = Color.Green
@@ -500,7 +500,7 @@
             player2Label.ForeColor = Color.Green
             player1Label.ForeColor = Color.Black
 
-        Else
+        ElseIf playerTurn = True Then
             buttonClick9.Text = "O"
             playerTurn = False
             player1Label.ForeColor = Color.Green
