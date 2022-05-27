@@ -23,9 +23,6 @@
 
         ' player X winning conbination
         If (buttonClick1.Text = "X") And (buttonClick2.Text = "X") And (buttonClick3.Text = "X") Then
-            buttonClick1.ForeColor = System.Drawing.Color.Green
-            buttonClick2.ForeColor = System.Drawing.Color.Green
-            buttonClick3.ForeColor = System.Drawing.Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -33,13 +30,11 @@
             scoringPoints = player1ScoreLabel.Text
             player1ScoreLabel.Text = scoringPoints + 1
 
-            MessageBox.Show("Player 1 winner the match")
             disableBoxes()
 
+            MessageBox.Show("Player 1 winner the match")
+
         ElseIf (buttonClick4.Text = "X") And (buttonClick5.Text = "X") And (buttonClick6.Text = "X") Then
-            buttonClick4.ForeColor = Color.Green
-            buttonClick5.ForeColor = Color.Green
-            buttonClick6.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -52,9 +47,6 @@
             MessageBox.Show("Player 1 winner the match")
 
         ElseIf (buttonClick7.Text = "X") And (buttonClick8.Text = "X") And (buttonClick9.Text = "X") Then
-            buttonClick7.ForeColor = Color.Green
-            buttonClick8.ForeColor = Color.Green
-            buttonClick9.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -67,9 +59,6 @@
             MessageBox.Show("Player 1 winner the match")
 
         ElseIf (buttonClick1.Text = "X") And (buttonClick4.Text = "X") And (buttonClick7.Text = "X") Then
-            buttonClick1.ForeColor = Color.Green
-            buttonClick4.ForeColor = Color.Green
-            buttonClick7.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -82,9 +71,6 @@
             MessageBox.Show("Player 1 winner the match")
 
         ElseIf (buttonClick2.Text = "X") And (buttonClick5.Text = "X") And (buttonClick8.Text = "X") Then
-            buttonClick2.ForeColor = Color.Green
-            buttonClick5.ForeColor = Color.Green
-            buttonClick8.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -98,9 +84,6 @@
 
 
         ElseIf (buttonClick3.Text = "X") And (buttonClick6.Text = "X") And (buttonClick9.Text = "X") Then
-            buttonClick3.ForeColor = Color.Green
-            buttonClick6.ForeColor = Color.Green
-            buttonClick9.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -113,9 +96,6 @@
             MessageBox.Show("Player 1 winner the match")
 
         ElseIf (buttonClick3.Text = "X") And (buttonClick5.Text = "X") And (buttonClick7.Text = "X") Then
-            buttonClick3.ForeColor = Color.Green
-            buttonClick5.ForeColor = Color.Green
-            buttonClick7.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -128,9 +108,6 @@
             MessageBox.Show("Player 1 winner the match")
 
         ElseIf (buttonClick1.Text = "X") And (buttonClick5.Text = "X") And (buttonClick9.Text = "X") Then
-            buttonClick1.ForeColor = Color.Green
-            buttonClick5.ForeColor = Color.Green
-            buttonClick9.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -146,9 +123,6 @@
 
         'player O winnenr combination
         If (buttonClick1.Text = "O") And (buttonClick2.Text = "O") And (buttonClick3.Text = "O") Then
-            buttonClick1.ForeColor = Color.Green
-            buttonClick2.ForeColor = Color.Green
-            buttonClick3.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -160,9 +134,6 @@
             disableBoxes()
 
         ElseIf (buttonClick4.Text = "O") And (buttonClick5.Text = "O") And (buttonClick6.Text = "O") Then
-            buttonClick4.ForeColor = Color.Green
-            buttonClick5.ForeColor = Color.Green
-            buttonClick6.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -175,9 +146,6 @@
             MessageBox.Show("Player 2 winner the match")
 
         ElseIf (buttonClick7.Text = "O") And (buttonClick8.Text = "O") And (buttonClick9.Text = "O") Then
-            buttonClick7.ForeColor = Color.Green
-            buttonClick8.ForeColor = Color.Green
-            buttonClick9.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -190,9 +158,6 @@
             MessageBox.Show("Player 2 winner the match")
 
         ElseIf (buttonClick1.Text = "O") And (buttonClick4.Text = "O") And (buttonClick7.Text = "O") Then
-            buttonClick1.ForeColor = Color.Green
-            buttonClick4.ForeColor = Color.Green
-            buttonClick7.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -205,9 +170,6 @@
             MessageBox.Show("Player 2 winner the match")
 
         ElseIf (buttonClick2.Text = "O") And (buttonClick5.Text = "O") And (buttonClick8.Text = "O") Then
-            buttonClick2.ForeColor = Color.Green
-            buttonClick5.ForeColor = Color.Green
-            buttonClick8.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -221,9 +183,6 @@
 
 
         ElseIf (buttonClick3.Text = "O") And (buttonClick6.Text = "O") And (buttonClick9.Text = "O") Then
-            buttonClick3.ForeColor = Color.Green
-            buttonClick6.ForeColor = Color.Green
-            buttonClick9.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -236,9 +195,6 @@
             MessageBox.Show("Player 2 winner the match")
 
         ElseIf (buttonClick3.Text = "O") And (buttonClick5.Text = "O") And (buttonClick7.Text = "O") Then
-            buttonClick3.ForeColor = Color.Green
-            buttonClick5.ForeColor = Color.Green
-            buttonClick7.ForeColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -251,9 +207,6 @@
             MessageBox.Show("Player 2 winner the match")
 
         ElseIf (buttonClick1.Text = "O") And (buttonClick5.Text = "O") And (buttonClick9.Text = "O") Then
-            buttonClick1.BackColor = Color.Green
-            buttonClick5.BackColor = Color.Green
-            buttonClick9.BackColor = Color.Green
 
             player1Label.ForeColor = Color.Black
             player2Label.ForeColor = Color.Black
@@ -312,16 +265,6 @@
         buttonClick8.Enabled = True
         buttonClick9.Enabled = True
 
-        buttonClick1.ForeColor = Color.Black
-        buttonClick2.ForeColor = Color.Black
-        buttonClick3.ForeColor = Color.Black
-        buttonClick4.ForeColor = Color.Black
-        buttonClick5.ForeColor = Color.Black
-        buttonClick6.ForeColor = Color.Black
-        buttonClick7.ForeColor = Color.Black
-        buttonClick8.ForeColor = Color.Black
-        buttonClick9.ForeColor = Color.Black
-
         player1ScoreLabel.Text = "0"
         player2ScoreLabel.Text = "0"
 
@@ -353,16 +296,6 @@
         buttonClick7.Enabled = True
         buttonClick8.Enabled = True
         buttonClick9.Enabled = True
-
-        buttonClick1.ForeColor = Color.Black
-        buttonClick2.ForeColor = Color.Black
-        buttonClick3.ForeColor = Color.Black
-        buttonClick4.ForeColor = Color.Black
-        buttonClick5.ForeColor = Color.Black
-        buttonClick6.ForeColor = Color.Black
-        buttonClick7.ForeColor = Color.Black
-        buttonClick8.ForeColor = Color.Black
-        buttonClick9.ForeColor = Color.Black
 
         player1Label.ForeColor = Color.Green
         player2Label.ForeColor = Color.Black
@@ -476,7 +409,6 @@
 
         End If
 
-
         buttonClick6.Enabled = False
         playersScoreBoard()
 
@@ -497,7 +429,6 @@
 
         End If
 
-
         buttonClick7.Enabled = False
         playersScoreBoard()
 
@@ -516,9 +447,7 @@
             player1Label.ForeColor = Color.Green
             player2Label.ForeColor = Color.Black
 
-
         End If
-
 
         buttonClick8.Enabled = False
         playersScoreBoard()
