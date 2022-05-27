@@ -297,7 +297,7 @@
         player1ScoreLabel.Text = "0"
         player2ScoreLabel.Text = "0"
 
-        player1Label.ForeColor = Color.Green
+        player1Label.ForeColor = Color.Black
         player2Label.ForeColor = Color.Black
 
         playerTurn = False
@@ -326,7 +326,7 @@
         buttonClick8.Enabled = True
         buttonClick9.Enabled = True
 
-        player1Label.ForeColor = Color.Green
+        player1Label.ForeColor = Color.Black
         player2Label.ForeColor = Color.Black
 
         playerTurn = False
